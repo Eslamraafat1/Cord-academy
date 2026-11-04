@@ -285,6 +285,7 @@ export const en = {
     successTitle: "Message validated",
     successText: "The form is valid, but no backend is connected yet, so nothing was sent. Connect sendContactMessage() in lib/api.ts.",
     emailUs: "Email",
+    emailViaForm: "Use the form and we'll reply by email.",
     location: "Location",
     locationValue: "Remote-first · Amman & Riyadh",
   },

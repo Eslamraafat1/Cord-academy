@@ -286,6 +286,7 @@ export const ar: Dict = {
     successTitle: "تم التحقق من الرسالة",
     successText: "النموذج صالح، لكن لا يوجد خادم متصل بعد فلم يُرسل شيء. اربط sendContactMessage() في lib/api.ts.",
     emailUs: "البريد",
+    emailViaForm: "استخدم النموذج وسنرد عليك عبر البريد الإلكتروني.",
     location: "الموقع",
     locationValue: "عن بُعد أولًا · عمّان والرياض",
   },

@@ -16,6 +16,12 @@ function resolveSiteUrl(): string {
 }
 
 export const SITE_URL = resolveSiteUrl();
+/**
+ * Public contact address shown on /contact. Unset by default: the page then points
+ * visitors to the contact form instead of showing a made-up address.
+ */
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || null;
+
 export const SITE_NAME = { en: "Cord Academy", ar: "أكاديمية كورد" } as const;
 
 /** Fixed on purpose: Date.now()/new Date() can't run while prerendering under Cache Components. */

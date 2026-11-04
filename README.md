@@ -51,6 +51,7 @@ The front end of a training academy built with Next.js 16. It has a course catal
 - [Pages](#pages)
 - [Project structure](#project-structure)
 - [Getting started](#getting-started)
+- [Known limitations](#known-limitations)
 - [Deployment](#deployment)
 - [Author](#author)
 
@@ -178,7 +179,21 @@ npm run dev        # http://localhost:3000 → redirects to /ar
 | `npm run start` | Serve the production build |
 | `npm run lint` | Run ESLint |
 
-Set `NEXT_PUBLIC_SITE_URL` to the public URL so canonical links, JSON-LD and the sitemap use the real domain. Without it, they fall back to a placeholder domain. To connect a backend, replace the stub bodies in `lib/api.ts`.
+Optional environment variables (see [`.env.example`](.env.example)):
+
+| Variable | Used for | When unset |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical/hreflang links, JSON-LD, `sitemap.xml`, `robots.txt` | Falls back to Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, then `https://cord-academy.vercel.app` (never localhost) |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | The email shown on `/contact` | The page links to the contact form instead of showing an address |
+
+To connect a backend, replace the stub bodies in `lib/api.ts`.
+
+## Known limitations
+
+- **No backend yet.** Sign-in, registration, the contact form, the newsletter and enrolment call stubs in `lib/api.ts` and tell the visitor the action is demo-only.
+- **No public contact email.** None is configured, so `/contact` points to the form rather than showing a placeholder address; set `NEXT_PUBLIC_CONTACT_EMAIL` to show a real one.
+- **Footer social icons** link to the platforms' home pages until real profile URLs are added in `components/layout/Footer.tsx`.
+- **Sample content.** Courses, instructors, reviews and testimonials are demo data.
 
 ## Deployment
 
