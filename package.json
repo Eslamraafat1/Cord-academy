@@ -1,12 +1,41 @@
 {
-  "name": "my-project",
+  "name": "cord-academy",
   "version": "0.1.0",
+  "description": "Cord Academy: training academy website with 3D visuals and smooth animations. Next.js, TypeScript, Three.js (R3F), GSAP, Framer Motion, Tailwind CSS.",
+  "author": "Eslam Raafat <https://new-portfolio-ashy-xi.vercel.app>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eslamraafat1/Cord-academy.git"
+  },
+  "homepage": "https://cord-academy.vercel.app",
+  "bugs": {
+    "url": "https://github.com/Eslamraafat1/Cord-academy/issues"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "threejs",
+    "react-three-fiber",
+    "gsap",
+    "framer-motion",
+    "tailwindcss",
+    "typescript",
+    "smooth-scroll",
+    "arabic",
+    "rtl",
+    "portfolio"
+  ],
+  "engines": {
+    "node": ">=20.9"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

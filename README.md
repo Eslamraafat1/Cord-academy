@@ -16,6 +16,8 @@ The front end of a training academy built with Next.js 16. It has a course catal
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-14-0055FF?logo=framer&logoColor=white)](https://motion.dev)
 [![Lenis](https://img.shields.io/badge/Lenis-1.3-111111)](https://lenis.darkroom.engineering)
 <br>
+[![CI](https://github.com/Eslamraafat1/Cord-academy/actions/workflows/ci.yml/badge.svg)](https://github.com/Eslamraafat1/Cord-academy/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white)](https://cord-academy.vercel.app)
 
 **[Live demo](https://cord-academy.vercel.app)** ·
